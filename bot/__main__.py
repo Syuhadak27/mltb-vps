@@ -158,7 +158,7 @@ async def ping(_, message):
     start_time = int(round(time() * 1000))
     reply = await send_message(message, "Starting Ping")
     end_time = int(round(time() * 1000))
-    await edit_message(reply, f"{end_time - start_time} ms")
+    await edit_message(reply, f"✅{end_time - start_time} ms")
 
 
 @new_task
